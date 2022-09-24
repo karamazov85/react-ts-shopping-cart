@@ -5,7 +5,6 @@ interface CartItem {
     id: number;
     quantity: number;
 }
-
 interface ShoppingCartContext {
     getItemQuantity: (id: number) => number
     increaseItemQuantity: (id: number) => void;
