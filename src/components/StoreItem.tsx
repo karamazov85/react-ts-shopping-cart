@@ -2,14 +2,12 @@ import { Button, Card } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { formatCurrency } from "../utilities/formatCurrency";
 
-
 interface StoreItemProps {
     id: number;
     name: string;
     price: number;
     imgUrl: string;
 }
-
 
 export const StoreItem: React.FC<StoreItemProps> = ({ id, name, price, imgUrl }) => {
     
