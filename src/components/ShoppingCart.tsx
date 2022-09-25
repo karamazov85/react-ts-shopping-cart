@@ -27,9 +27,7 @@ export const ShoppingCart:React.FC<ShoppingCartProps> = ({ isOpen }) => {
                 <div className="ms-auto fw-bold fs-5">
                     Total: 
                     {formatCurrency(cartItems.reduce((total, cartItem) => {
-                        
                         const item = storeItems.find(i => i.id === cartItem.id)
-                        
                         return total + (item?.price || 0) * cartItem.quantity
                     },0))}
                 </div>
